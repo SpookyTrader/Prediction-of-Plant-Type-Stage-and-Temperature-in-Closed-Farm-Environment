@@ -1,0 +1,40 @@
+# Train-test split
+test_size: 0.30
+random_state: 5
+
+# Hyperparameter tuning for classification
+metric1: 'f1_macro'
+cv1: 5
+n_iter1: 100
+random_state1: 5
+# Parameters for xgboost
+step_max_depth1: 1
+step_learning_rate1: 0.01
+step_subsample1: 0.01
+step_colsample_bytree1: 0.01
+step_colsample_bylevel1: 0.01
+step_n_estimators1: 50
+
+# Parameters for random forest
+Step_max_depth3: 1
+criterion3: ['gini', 'entropy', 'log_loss']
+max_features3: ['sqrt','log2',null]
+step_min_samples_split3: 1
+step_n_estimators3: 50
+
+# Hyperparameter tuning for regression
+cv2: 5
+n_iter2: 100
+random_state2: 5
+# Parameters for xgboost
+step_max_depth2: 1
+step_learning_rate2: 0.01
+step_subsample2: 0.01
+step_colsample_bytree2: 0.01
+step_colsample_bylevel2: 0.01
+step_n_estimators2: 25
+# # Parameters for random forest
+Step_max_depth4: 1
+max_features4: ['sqrt','log2',null]
+step_min_samples_split4: 1
+step_n_estimators4: 50
